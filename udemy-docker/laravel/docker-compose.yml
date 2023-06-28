@@ -5,8 +5,8 @@ services:
     container_name: "laravel-db"
     volumes:
       - ./data:/var/lib/mysql
-#      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
-    environment:
+##      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment: 
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel
       MYSQL_USER: docker
